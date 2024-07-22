@@ -1,0 +1,126 @@
+
+Programming capability is not fully installed (if that is needed, you must run Netica once as Administrator).
+Couldn't completely enter Netica into the Windows Registry (App Paths info skipped), because: Acceso denegado.
+  (if needed, try running Netica once by right-clicking Netica executable icon and choosing 'Run as Administrator').
+
+Netica 7.01 Win (CoGFMs64), (C) 1992-2023 Norsys Software Corp.
+
+Netica is operating without a password; there are some limitations.
+The file location of the executable running this program is:  C:\Netica\Netica 701\Netica.exe
+It appears to be running under Wine (reg).
+
+Command Line:  /open "D:\A ARCHIVOS UNA\7 semestre\Estadistica Bayesiana\gripe2.neta"
+Doing command line 'open'.
+Compiled to 2 cliques, with total table size (including sepsets) of 468.
+Probability of new finding = 43.364 %, of all findings = 43.364 %.
+Case file to learn CPTs from:  D:\A ARCHIVOS UNA\7 semestre\Estadistica Bayesiana\t.csv
+Remove existing node CPT and experience tables first? (yes/no)   --> YES
+Enter degree (normal is 1):  1
+Used 5725 cases to modify the CPT tables of 1 nodes.
+
+**2334** No nodes selected (or in node-set named 'target') to run the tests for.
+Case file for testing:  D:\A ARCHIVOS UNA\7 semestre\Estadistica Bayesiana\t.csv
+Read 5725 cases, and used 5725 of them to test net.
+
+For S:       etiqueta
+-----
+
+Confusion:
+  ...Predicted..
+  enferm  salud_    Actual
+  ------  ------    ------
+    3144      30    enfermo
+     482    2069    salud_normal
+
+Error rate = 8.943%
+
+Scoring Rule Results:
+  Logarithmic loss = 0.2017
+  Quadratic loss   = 0.1306
+  Spherical payoff = 0.9272
+
+Calibration:
+  enfermo    0-0.5:    0.066| 0.5-1:    0.258| 1-50:     14.3 | 50-60:    57.8 | 60-80:    78   | 80-98:    100  | 98-99.8:  100  | 99.8-99.9:100  | 
+  salud_norm 0-0.2:    0    | 0.2-0.5:  0    | 0.5-5:    0    | 5-25:     20.7 | 25-50:    40.6 | 50-99:    85.7 | 99-99.5:  99.7 | 99.5-99.8:99.9 | 
+  Total      0-0.2:    0    | 0.2-0.5:  0.0485|0.5-1:    0.203| 1-5:      0.366| 5-25:     20.7 | 25-50:    41.1 | 50-60:    57.3 | 60-80:    78   | 80-98:    100  | 98-99.5:  99.7 | 
+             99.5-99.8:100  | 99.8-99.9:100  | 
+
+Times Surprised (percentage):
+               .................Predicted Probability....................
+  State        < 1%             < 10%             > 90%             > 99%
+  -----        ----             -----             -----             -----
+  enfermo      0.11 (2/1903)    0.15 (3/2037)     0.00 (0/1628)     0.00 (0/1453)
+  salud_norm   0.00 (0/1453)    0.00 (0/1628)     0.15 (3/2037)     0.11 (2/1903)
+  Total        0.06 (2/3356)    0.08 (3/3665)     0.08 (3/3665)     0.06 (2/3356)
+
+Quality of Test for state 'enfermo':
+  Cutoff   Sensitivity   Specificity    Predictive   Predict-Neg    Error-Rate
+       0        100.00          0.00         55.44        100.00         44.56
+     0.5         99.97         59.35         75.37         99.93         18.13
+       1         99.94         74.52         82.99         99.89         11.39
+       2         99.91         79.73         85.98         99.85          9.08
+      50         99.05         81.11         86.71         98.57          8.94
+      60         95.09         84.71         88.56         93.27          9.54
+      70         93.45         85.93         89.20         91.33          9.90
+      80         51.51        100.00        100.00         62.37         26.88
+     100          0.00        100.00        100.00         44.56         55.44
+  Gini coeff = 0.9185
+  Area under ROC = 0.9592    
+
+-------------------------------------------------------------------------------
+ ...
+Compiled to 2 cliques, with total table size (including sepsets) of 180.
+Case file to learn CPTs from:  D:\A ARCHIVOS UNA\7 semestre\Estadistica Bayesiana\t.csv
+Remove existing node CPT and experience tables first? (YES/no)   --> YES
+Enter degree (normal is 1):  1
+Used 5725 cases to modify the CPT tables of 6 nodes.
+Case file for testing:  D:\A ARCHIVOS UNA\7 semestre\Estadistica Bayesiana\t.csv
+Read 5725 cases, and used 5725 of them to test net.
+
+For S:       etiqueta
+-----
+
+Confusion:
+  ...Predicted..
+  enferm  salud_    Actual
+  ------  ------    ------
+    3144      30    enfermo
+     482    2069    salud_normal
+
+Error rate = 8.943%
+
+Scoring Rule Results:
+  Logarithmic loss = 0.2017
+  Quadratic loss   = 0.1306
+  Spherical payoff = 0.9272
+
+Calibration:
+  enfermo    0-0.5:    0.066| 0.5-1:    0.258| 1-50:     14.3 | 50-60:    57.8 | 60-80:    78   | 80-98:    100  | 98-99.8:  100  | 99.8-99.9:100  | 
+  salud_norm 0-0.2:    0    | 0.2-0.5:  0    | 0.5-5:    0    | 5-25:     20.7 | 25-50:    40.9 | 50-99:    85.7 | 99-99.5:  99.7 | 99.5-99.8:99.9 | 
+  Total      0-0.2:    0    | 0.2-0.5:  0.0485|0.5-1:    0.203| 1-5:      0.366| 5-25:     20.7 | 25-50:    41.3 | 50-60:    57.3 | 60-80:    78   | 80-98:    100  | 98-99.5:  99.7 | 
+             99.5-99.8:100  | 99.8-99.9:100  | 
+
+Times Surprised (percentage):
+               .................Predicted Probability....................
+  State        < 1%             < 10%             > 90%             > 99%
+  -----        ----             -----             -----             -----
+  enfermo      0.11 (2/1903)    0.15 (3/2037)     0.00 (0/1628)     0.00 (0/1453)
+  salud_norm   0.00 (0/1453)    0.00 (0/1628)     0.15 (3/2037)     0.11 (2/1903)
+  Total        0.06 (2/3356)    0.08 (3/3665)     0.08 (3/3665)     0.06 (2/3356)
+
+Quality of Test for state 'enfermo':
+  Cutoff   Sensitivity   Specificity    Predictive   Predict-Neg    Error-Rate
+       0        100.00          0.00         55.44        100.00         44.56
+     0.5         99.97         59.35         75.37         99.93         18.13
+       1         99.94         74.52         82.99         99.89         11.39
+       2         99.91         79.73         85.98         99.85          9.08
+      50         99.05         81.11         86.71         98.57          8.94
+      60         95.09         84.71         88.56         93.27          9.54
+      70         93.45         85.93         89.20         91.33          9.90
+      80         51.51        100.00        100.00         62.37         26.88
+     100          0.00        100.00        100.00         44.56         55.44
+  Gini coeff = 0.9185
+  Area under ROC = 0.9592    
+
+-------------------------------------------------------------------------------
+Save File As:  D:\A ARCHIVOS UNA\7 semestre\Estadistica Bayesiana\gripe resultados.txt
