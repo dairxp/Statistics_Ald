@@ -1,4 +1,4 @@
-####################   CASO TITANIC      ########
+####################   CASO AFECCIONES RESPIRATORIAS     ########
 
 library(dplyr)
 library(readxl)
